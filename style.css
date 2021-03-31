@@ -1,1 +1,44 @@
+* {
+  margin: 10, 10;
+  box-sizing: border-box;
+}
+
+a:link {
+  color: blue;
+  text-decoration: none;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: aqua;
+  text-decoration: underline;
+}
+a:active {
+  color: red;
+}
+a:visited:hover {
+  color: orange;
+}
+a:visited:active {
+  color: red;
+}
+
+
+.page {
+  width: 600px;
+  margin: 0 auto;
+}
+
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    color: #414141;               /* Dark gray */
+    background-color: #EEEEEE;
+    text-align: center;
+}
+
+ol,ul {
+  margin: 1000px, auto;
+  text-align: left;
+}
 
