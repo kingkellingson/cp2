@@ -15,7 +15,7 @@ a:hover {
   text-decoration: underline;
 }
 a:active {
-  color: red;
+  color: rgb(114, 52, 52);
 }
 a:visited:hover {
   color: orange;
