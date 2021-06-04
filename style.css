@@ -3,6 +3,8 @@
   box-sizing: border-box;
 }
 
+
+
 a:link {
   color: blue;
   text-decoration: none;
@@ -12,7 +14,6 @@ a:visited {
 }
 a:hover {
   color: aqua;
-  text-decoration: underline;
 }
 a:active {
   color: rgb(114, 52, 52);
@@ -26,20 +27,15 @@ a:visited:active {
 
 
 .page {
-  width: 900px;
+  
   margin: 0 auto;
 }
 
 p, h2, h3, h4, h5, h6 {
     font-family: "Helvetica", "Arial", sans-serif;
     color: #414141;               /* Dark gray */
-    background-color: #EEEEEE;
     text-align: center;
     margin: 0 auto;
-}
-
-body {
-  background-color: #EEEEEE;
 }
 
 
@@ -48,11 +44,17 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 25%;
     background-color: #f1f1f1;
     position: fixed;
-    height: 100%;
+    height: auto;
     overflow: auto;
+    border: 1px solid #555
+}
+
+.side-navigation-ul li {
+  border-bottom: 1px solid #555;
+  text-align: center;
 }
 
   .side-navigation-ul li a {
@@ -64,17 +66,75 @@ body {
 
   /* Change the link color on hover */
   .side-navigation-ul li a:hover {
-    background-color: #555;
+    background-color: rgb(42, 212, 224);
+    text-decoration: underline;
     color: white;
   }
 
-div {
+.textHolder{
   margin-left:25%;
   padding:1px 16px;
-  height:1000px;
+  height:100%;
+  border: 1px solid rgb(5, 80, 243)
+}
+
+.pictureHolder {
+  padding:1px 16px;
+  height:100%;
+  border: 1px solid rgb(243, 5, 5)
+}
+
+.pictures{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(243, 5, 5)
+}
+
+.words{
+  margin: 4px;
+}
+
+.frame {
+  margin: 0 auto;
+  border: 1px solid rgb(5, 243, 112)
 }
 
 ol,ul {
   margin: 1000px, auto;
   text-align: left;
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+
+  .textHolder {
+    order: 1;
+    margin: auto;
+  }
+
+  .side-navigation-ul {
+    order: 2;
+    margin: auto;
+    position: relative;
+    width: 100%;
+  }
+  
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
 }
