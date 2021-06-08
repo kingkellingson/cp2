@@ -1,68 +1,242 @@
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
-    <meta charset='UTF-8'/>
-    <title>About Me</title>
-    <link rel='stylesheet' href='style.css'/>
-    <link rel='stylesheet1' href='Masonry.css'/>
-  </head>
-  <body class = 'page'>
- <!--test-->
+<html>
 
-    <ul class = 'side-navigation-ul'>
-      <li style = 'padding: 8px 16px; height: auto; font-weight: bold; background : orange;'>Kyle's Contact Info:</li>
-      <li style = 'height: auto; font-weight: bold; background : blue;'><a href="https://lab1.kellingson.com">Rabbits!</a></li>
-      <li style = 'height: auto; font-weight: bold; background : green;'><a href="https://www.linkedin.com/in/kyle-ellingson-b0578a1b4">LinkedIn</a></li>
-      <li style = 'height: auto; font-weight: bold; background : yellow;'><a href="https://github.com/kingkellingson">GitHub</a></li>
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+
+
+<!-- Navigation bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="/"><img class = "my-brand" src= "http://logos.textgiraffe.com/logos/logo-name/Sahara-designstyle-jungle-m.png" height= "300"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item-active">
+        <a class="nav-link" href="/index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/reviews.html">Reviews</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/pages/Masonry.html">Masonry</a>
+      </li>
     </ul>
-
-<div class = 'textHolder'>
-    <h2>About Me</h2>
-    <h2>Kyle Ellingson: The <em>Man</em>, the <em>Myth</em>, the <em>Legend</em></h2>
-    <img src='https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/94081027_615299402661071_1704994522070515712_o.jpg?_nc_cat=103&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=DnkJPkeXHL4AX-hNAhW&_nc_ht=scontent-sea1-1.xx&oh=64eab096322f39b484003f941e594d1a&oe=607CC512' width='300'/>
-    <hr>
-    <p><strong>Note: This page covers Kyle's coding experience, but you may also be looking for <a
-   href='https://www.facebook.com/kyle.ellingson.31/'>his Facebook</a> for some more pictures of him </strong></p>
-
-   <div class ='pictureHolder'>
-    <h3>Hi! This is a Flexbox!</h3>
-  
-   <h3>Top 3 coolest projects Kyle has Done:</h3>
-      <div class = 'pictures'>
-      <div class = 'frame'>
-        <li class = 'words'>He made homemade mexican tacos!</li>
-        <img class= 'myimage' src='https://lh3.googleusercontent.com/plSy9ciMvwiqTZsl6975XeITLmon1FNWvOUi8tSEs53Yi67y5Ck8Cj17qVuglF6f0BEbLZruG0ygA3o2P4pxcdUI8EsPV8_0UoEg6vfM1169p0jxqDCg4R6S5vrJkliDNEfnqv4QrWN7ltqr5ey_aUvnqi9n2n6Rn3i1e2TvqZqHauu0UOnGpfa36J63kDNMRvQwWnsDA_abj1wF1W9S3jeKgblEISEstF6CEupPxf7oVH0GOWGeqZ5Y6j3UqBpnQi3esh8jK18Nmw8xIERX5K5lDzmMBfjMsWdhX0qP8BpPfjZFuFrdS7AJ1e3DkL5wFdal1_ifbokwjdWI4g30mPc-g5PJa8GO7Z0Z3IpiTZWpBdvR4eVjH4-ARtavE8IALIeCXPfzhiF1xrDuTaKrCejcJMkBPC1lfYpbPtQQSvydIQMjxFn0cZm5dhBE2UN0z4DA58uJSGPIW3SpBAkiS3cuHQRUWksc-Yz8gytKP7c5Dp4c8FlczO-VLdVVsNVyymC8PyUB2DvDcPTOAFoyBJJXKx47K7ZY6PefkpjTNrTXvaUodXey0euSaeZAr9C9QozLjpDC4VUKPrV5yqf2UHx2MJN8dyfjaOxbxcHWPP0DxiuyY_kHeFKe7QtEI8A4Nr89T-QZ1PeZ_QY5oSRe35lfFyUUSQdUzFyu_6cM5O3lJOWTMgBF5GDo_CIF-PSqLAVxgSxDFtSsPC8JymTRwAk=w703-h937-no?authuser=0' height='200'/>
-      </div>
-      <div class = 'frame'>
-        <li class = 'words'>He mowed a lawn!</li>
-
-        <img class= 'myimage' src='https://lh3.googleusercontent.com/zDULlM5EUtPLDlNYaXd1vWoPrWM3SZpchG_qBwflno9DCT_Ez3vjJuitRxXSdLcKvpd6bjNBT4W0Q2ZfZVrqeZvhlxFbqbBTC2DbH5EAl6-AP2moKbOwpG83kW06c9tnoT5vv1C7xhCvCirhBFRY51EbKM1GtUJ-Cp0KnMcgQXUtBbAJytjl8nvfZENf3iD77g43Errryu3lB4tPSiEznPOouRidivQhsOPEwvdQIK_7vPyzvWq08Vc6K9LFt6LOhR5h4bWHQfrBQfJK6wsv8wl-y9QQtT0FU1XNBVbdUE0isysT4ipS3rCFyUygEKwUw4WbreNddINaO1cMWw49e1xM3v4Fhg8ScAd4xUGGbAv0WGFr318SM5MkARJnnqvMvPAHFZ6SSeHRXExw12i4GvgR8SABa_YTXQOJ6xXa7if05Ct4BM-ZFf8fBGss-KDOul-S7y82_jFlppDdTyBk-skeSChpMKVc597USQlmcKCZqrK6ygl1ITQHsjCVc6yqLoVTXKneGCvpOW8PDi5nO3dh9hUT-TSK1IUpizAZdjhREFCBqIR1Y7nAR_dSNUMh7F2ZR2c5gQy0g6VmUV-eO07PuaqZWUCInKm3sdEiBCShJ0Euyitrkufylt2q8z0UyjTf-bxC3uVZYJx5-msePq8-R_Jo1GCvUnOA3qpzCwng5LokRLUB2B8HIerz4uOojyVfM8RktOGN_2V4fGUAxtU=w1250-h937-no?authuser=0' height='200'/>
-      </div>
-      <div class = 'frame'>
-        <li class = 'words'>He ate <em>all</em> of the doughnuts on this plate!</li>
-        <img class= 'myimage' src='https://lh3.googleusercontent.com/fVKEvVQdiOh6v5Lg_KsddA0GoSraYR03O9WoSHHuX2WTD_ORLQSt_aQ64ayyA623Z2vriIYrrV4iB3hYLg-12NYuzcYPtYf8C-M2Z7E2HjKYKP4FjCM9lEqFDhewt68V6vfV6lxV9GnMoIQZdxeSmM8y7g0LksWLkk7tGCy3S9cqFDid9jixSXc5W0thUK6TtOP9a7fIApxPr5DjkFAuJYXd9WPrbpPQrs2iFuU9sJvabgziqFprTIY_w5toL-E3V6IXi4MwgpEHTHoejF-IoIMntSWSZ-HEfV4U6dJ4FBqYPoZttNW9kj7jorrpNou3dLxz9e5cOVDBTaPU6hZDIlzeN0PYEw4lonA-4zJR9NLkMfhd-93WCO8HJmxTZKU-1AA7BvrCFAP8crLPNKrq0qZSB9dOi_xvvw74DcB7fD8BfUf8gvKc6rSnN3En2L2aocQ6vnVI-2IOFGrzlr2MDONKSIkfpFR4SOLQd1zeHm9bk5OWG64NG9ddqAXDAQGBm9U2XIxuAc0EEBNV94ekDLFpUYt7pi-Ta_LVlV41s4pi5Fmj6MxP8_9sPA04VPSjz3KpAaQMgo8TZ4W5VyaL3qZcG68qs-CgDNapab1EXu3UkbuvRhSZvHav8pZFljvWExpF6vpcFvTnWPLqK59Ay3op5PKOUyTu01bCb-H2ioZUv-m0EXfMgqPTJPQYxKpy3m1NJoMXEX0n4YH8veivipE=w1250-h937-no?authuser=0' height='200'/>
-      </div>
-      </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
+</nav>
 
-   <h3>Kyle's Work Experience:</h3>
-     <h4> Note: If you are looking for work, try looking <a href='https://yjobs.byu.edu/'>here</a> for ideas </h4>
-      <ul>
-        <li> Teacher at the MTC</li>
-        <li> Tecnnition for BYU OIT</li>
-        <li> Respite Caregiver for Orion Care Solutions</li>
-      </ul>
+
+
+
+<!-- spacer -->
+<div class="container-overlay">
+  <!-- yoyoyo -->
+  
+  <div class = "overlay-spacer">
+    
+  </div>
+  <div class = "picture-container">
+    
+
+    <div class =  "column">
+      <div class = "column-heading">
+        <h5>Aloha from Hawaii!</h5>
+      </div>
+        <div class =  "picture-inside">
+          <a href=""><img src="https://slimages.macys.com/is/image/MCY/products/0/optimized/14766430_fpx.tif?op_sharpen=1&wid=1230&hei=1500&fit=fit,1&$filterxlrg$" alt=""></a>
+          <h6>Join the Ohana</h6>
+        </div>
+    </div>
+    <div class =  "column">
 
       
+      <div class = "column-heading">
+        <h5>Clothing Deals in Outlet</h5>
+      </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonServices/Site/US/Product/FBA/Outlet/Merchandising/Outlet_GW_WC_186x116_B07Y2PQP2G_231717aa._SY116_CB668934226_.jpg" alt=""></a>
+          <h5>Women</h5>
+        </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2020/img/Gifting/Manual/Adults/B00M1NEUKK_372x232._SY232_CB429593021_.jpg" alt=""></a>
+          <h5>Men</h5>
+        </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/launchpad/gateway/2021/May/gw_early_june_evergreen_05.14.21_372x232_camp5_sports_B081DBH7PK._SY232_CB668336500_.jpg" alt=""></a>
+          <h5>Shoes</h5>
+        </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2021/journeys/N2FkMDllZDUt/N2FkMDllZDUt-NGU4YTkwMGMt-w372._SY232_CB667112257_.jpg" alt=""></a>
+          <h5>Misc</h5>
+        </div>
+        <h6>See more</h6>
+    </div>
+    <div class =  "column">
+      <div class = "column-heading">
+        <h5>Our Floral Summerwear is <strong>in!</strong></h5>
+      </div>
+        <div class =  "picture-inside">
+          <a href=""><img src="https://media.kohlsimg.com/is/image/kohls/4887344_Yellow_Floral?wid=1200&hei=1200&op_sharpen=1" alt=""></a>
+          <h6>Try it on</h6>
+        </div>
+    </div>
+    <div class =  "column">
+      <div class = "column-heading">
+        <h5>Season Deal on Sunglasses!</h5>
+      </div>
+        <div class =  "picture-inside">
+          <a href=""><img src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20210601-travel-bkg" alt=""></a>
+          <h6>Check it out</h6>
+        </div>
+    </div>
+    <div class =  "column">
+      <div class = "column-heading">
+        <h5>Get your <strong>summer</strong> on!</h5>
+      </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://media.kohlsimg.com/is/image/kohls/3964088_Blue_Stripe?wid=245&hei=240&op_sharpen=1" alt=""></a>
+          <h5>Swimwear</h5>
+        </div>  
+        <div class =  "column-inside">
+          <a href=""><img src="https://slimages.macys.com/is/image/MCY/products/2/optimized/16884022_fpx.tif?op_sharpen=1&wid=700&hei=855&fit=fit,1&fmt=webp" alt=""></a>
+          <h5>g\hi</h5>
+        </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://media.kohlsimg.com/is/image/kohls/2291732_Camel?wid=240&hei=240&op_sharpen=1" alt=""></a>
+          <h5>Men</h5>
+        </div>
+        <div class =  "column-inside">
+          <a href=""><img src="https://media.kohlsimg.com/is/image/kohls/4148508?wid=125&hei=125&op_sharpen=1" alt=""></a>
+          <h5>Sunscreen</h5>
+        </div>
+        <h6>Go for a swim!</h6>
+    </div>
+    <div class =  "column">
+      <div class = "column-heading">
+        <h5>Summer Deal on Sunglasses!</h5>
+      </div>
+        <div class =  "picture-inside">
+          <a href=""><img src="https://media.kohlsimg.com/is/image/kohls/hp2-dm-20210601-travel-bkg" alt=""></a>
+          <h6>Check it out</h6>
+        </div>
+    </div>
+  </div>
+</div>
+  <!-- <div class = 'overlay'>
+    <a><img class="img-overlay" src="https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/NDdhM2JmYjct/NDdhM2JmYjct-ZjY1YWY0YTMt-w3000._CB668762565_.jpg" alt="Engagement"></a>
+  </div> -->
+  
+  <div class = "img-content-holder">
+    
+  </div>
+</div>
 
-      <h3>Ways to contact Kyle:</h3>
-         <ul>
-           <li> Message him on Facebook <a href='https://www.facebook.com/kyle.ellingson.31/'>here</a> </li>
-           <li> Look him up on LinkedIn <a href='https://www.linkedin.com/in/kyle-ellingson-b0578a1b4'>here</a> </li>
-           <li> Contribute code to his GitHub <a href='https://github.com/kingkellingson'>here</a> </li>
-         </ul>
-     </div>
-      </body>
+
+<!-- spacer -->
+<div class="container">
+  <div class = spacer>
+    
+  </div>
+</div>
+
+<!-- This is for the hello section  -->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-6">
+      <div class="image-holder">
+        <!-- <img class= "img-main" src="https://live.staticflickr.com/65535/49479062513_5a8100e10f_k.jpg" alt="Photographer"></a> -->
+        <a href="" title="Engagement"><img class="img-main" src="https://live.staticflickr.com/8573/16672887642_d7dc79f3de_b.jpg" alt="Engagement"></a>
+      </div>
+    </div>
+    <div class="col-12 col-lg-6">
+      <div class="text-holder">
+        <div class="heading">
+          <h3>Well Hello!!</h3>
+        </div>
+        
+        <div class="paragraph">
+          <h5>It's so nice meet you! My name is Kyle Ellingson, and me and my wife are <em>So Excited</em> to take pictures of you and with you! Feel free to explore around my website to see all the cool pictures that I have!</h5>
+          <h5>Below you will find links to various projects I have done and a little bit about me! You will also see that I have some great reviews from othert people! Be sure to schedule me so that you too can leave a good review!</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- spacer -->
+<div class="container">
+  <div class = spacer>
+    
+  </div>
+</div>
+
+
+<!-- this is for the links -->
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-4">
+      <div class="image-holder">
+        <a href="/pages/about.html" title="photographer"><img src="https://live.staticflickr.com/7859/46784950154_a3db0ceeec_b.jpg" alt="Photographer"></a>
+      </div>
+      <div class="caption">
+        <h2><a href="/pages/about.html" title="Photographer">About</a></h2>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="image-holder">
+        <!-- <img src="https://live.staticflickr.com/65535/49479062513_5a8100e10f_k.jpg" alt="Photographer"></a> -->
+        <a href="/pages/portfolio.html" title="Photographer"><img src="https://live.staticflickr.com/4450/37660100732_989d7e92e3_b.jpg" alt="Photographer"></a>
+      </div>
+      <div class="caption">
+        <h2><a href="/pages/portfolio.html" title="Photographer">Portfolio</a></h2>
+      </div>
+    </div>
+    <div class="col-12 col-lg-4">
+      <div class="image-holder">
+        <a data-flickr-embed="true" href="/pages/reviews.html" title="photographer"><img src="https://live.staticflickr.com/7185/6782687390_3af63828de_b.jpg" alt="photographer"></a>
+      </div>
+      <div class="caption">
+        <h2><a href="/pages/reviews.html" title="Photographer">Reviews</a></h2>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- spacer -->
+<div class="container">
+  <div class = spacer>
+    
+  </div>
+</div>
+
+  <!-- footer -->
+  <div class="footer">
+    <p>Each photo shot with &#10084; </p>
+    <p>https://github.com/BYU-CS-260-Winter-2021/lab-1-photography-website-kingkellingson.git  </p>
+  </div>
+
 </html>
-
-

@@ -1,0 +1,278 @@
+.my-brand {
+  width: 100px;
+  height: auto;
+}
+
+.bg-dark {
+  background-color: #B2D6FF !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #dd8113;
+  }
+  
+  .navbar-dark .navbar-nav .nav-link  {
+    color: #dd8113;;
+  }
+
+  .nav-link-active  {
+    color: green;
+  }
+
+  .btn-outline-success {
+    color: #dd8113;
+    background-color: transparent;
+    background-image: none;
+    border-color: #dd8113;
+}
+
+.btn-outline-success:hover {
+    color: #97228d;
+    background-color: #dd8113;
+    border-color: #97228d;
+}
+
+ .container{
+    height: auto;
+} 
+
+h3 {
+    text-decoration:underline;
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+body {
+    background-color: rgb(233, 226, 213);
+    color: #333333;
+  }
+
+.img-main {
+    height: 300px;
+    margin: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  
+  img {
+    height: 350px;
+    justify-content: center;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .image-holder{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    /* border: 1px solid rgb(243, 5, 5) */
+  }
+
+  .text-holder{ 
+    height: 300px;
+    padding: 20px;
+    box-sizing: content-box;
+    grid-template: 20% 1fr / 20% 1fr;
+    border: 3px solid #174ad4;
+    /* background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/NDdhM2JmYjct/NDdhM2JmYjct-ZjY1YWY0YTMt-w3000._CB668762565_.jpg);
+    background-size:contain; */
+  }
+
+.col{
+    border: 1px solid rgb(243, 5, 203);
+    text-align: center;
+}
+
+
+  .heading {
+    float: left;
+    width:40%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid rgb(13, 243, 5); */
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+    /* order: 1; */
+  }
+
+  .container-overlay {
+    width: 100%;
+    height: 1230px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+      overflow: hidden;
+
+    background-color: purple;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2021/journeys/YjM2OWU2OGMt/YjM2OWU2OGMt-MGMyZTczYTgt-w3000._CB668604101_.jpg);
+    background-size:contain;
+  }
+
+.overlay {
+  /* display: flex; */
+  margin: 0 auto;
+  height: 100px;
+  background-color: lightblue;
+  justify-content: center;
+  clear:both;
+  /* background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/kindle/journeys/NDdhM2JmYjct/NDdhM2JmYjct-ZjY1YWY0YTMt-w3000._CB668762565_.jpg); */
+  /* overflow: hidden; */
+}
+
+.img-overlay {
+    /* overflow: scroll; */
+
+  height: 600px;
+  margin: 0 auto;
+  width: auto;
+  border: 1px red;
+}
+
+.overlay-spacer {
+    /* overflow: hidden; */
+
+  background-color: transparent;
+  width: 100%;
+  height: 240px;
+  margin: 0auto;
+  /* background-color: white; */
+  /* height: 4px; */
+  float: left;
+}
+
+.picture-container {
+  background-color: rgb(233, 226, 213);
+  width: 100%;
+  /* height: 4px; */
+  float: left;
+  /* display: flex; */
+  height: 1000px;
+  overflow: hidden;
+  border: 1px red;
+}
+
+.column-heading {
+  width:100%;
+  margin: 0 auto;
+  /* margin-top: 20px; */
+  padding: 30px 2%;
+  padding-bottom: 10px;
+  float: left;
+  background-color: #B2D6FF;  
+  text-align: left;
+}
+
+.column-heading h5{
+  font-size: 2em;
+}
+
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  margin-top: 0;
+  height: 470px;
+  background-color: white;  
+}
+
+.column h6{ 
+  font-size: 13px;
+  padding: 10px;
+  color: black;
+  font-family: Arial, sans-serif;
+  /* margin-bottom: 20px; */
+}
+
+.column-inside {
+  float: left;
+  width: 46%;
+  margin: 30px 2%;
+  margin-top: 0;
+  height: 150px;
+  background-color: white;    
+}
+
+.column-inside a img{
+  margin: 0 auto;
+  height: 125px; 
+}
+
+.picture-inside a img{
+  margin: 0 auto;
+  height: 330px; 
+  font-size: 13px;
+  color: black;
+}
+
+.picture-inside h6{
+  padding-top: 29px;
+}
+
+
+  .spacer1 {
+    float: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 1px solid rgb(174, 177, 175); */
+    text-align: center;
+    
+    box-sizing: border-box;
+    /* height: 10px; */
+    /* clear:both; */
+}
+
+  .spacer {
+      height: 100px;
+      /* clear:both; */
+      /* border: 1px solid rgb(163, 162, 172); */
+  }
+
+  .caption { 
+      text-align: center;
+  }
+
+
+  .paragraph {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+  }
+
+  .footer {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    opacity: .25;
+    text-align: center;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    transition: opacity 1s ease-in-out;
+}
+
+.footer {
+    color: currentColor;
+}
+
+.footer:hover {
+    opacity: .75;
+}
+
+
+h2 a{
+    color: #22fcf1;
+    text-decoration:none;
+    font-size: 2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+
+h2 a:hover {
+    text-decoration:underline;
+    /* font-size: 3em; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* color: #174ad4; */
+}
