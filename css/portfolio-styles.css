@@ -1,6 +1,5 @@
-
-  /* this is fo the menu */
-  .bg-dark {
+/* this is fo the menu */
+.bg-dark {
     background-color: #174ad4 !important;
   }
   
@@ -11,12 +10,17 @@
     .navbar-dark .navbar-nav .nav-link {
       color: #fff;
     }
+
+    .nav-item-active, .nav-item {
+        font-family: 'Open Sans', sans-serif;
+    }
   
     .btn-outline-success {
       color: #22fcf1;
       background-color: transparent;
       background-image: none;
       border-color: #22fcf1;
+      font-family: 'Open Sans', sans-serif;
   }
   
   .btn-outline-success:hover {
