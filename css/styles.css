@@ -1,8 +1,48 @@
-  
-  body {
+ body {
     background-color: rgb(233, 226, 213);
     color: #333333;
   }
+
+.settings-banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 0 0 0;
+  text-align: center;
+  border-top: 1px solid rgb(172, 12, 12);
+  border-bottom: 1px solid gray;
+}
+
+.settings-banner a {
+  color: black;
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+
+.announcement {
+  width: 33%;
+}
+
+.settings {
+  display: flex;
+  width: 33%;
+  justify-content: flex-end;
+}
+.settings h4 {
+ font-size: 15px;
+ margin: 0;
+}
+
+.sign-in {
+  display: flex;
+}
+
+.my-sign-in {
+  height: 30px;
+  width: 50px;
+}
+
 
 
 .my-brand {
