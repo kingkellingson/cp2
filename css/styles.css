@@ -3,10 +3,13 @@ body {
     color: #333333;
   }
 
+
+/* settings banner */
+
+
 .settings-banner {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding: 0 0 0 0;
   text-align: center;
   border-top: 1px solid rgb(172, 12, 12);
@@ -19,64 +22,188 @@ body {
   font-weight: bolder;
 }
 
+.username {
+  width: 33%;
+  display: flex;
+  justify-content: flex-start;
+  /* background-color: rgb(172, 12, 12); */
+}
+
+.welcome {
+  display: flex;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+.welcome h4, .welcome h5{
+  font-weight: bold;
+  font-size: 14px;
+  margin: 0 0;
+  margin-top: 5px;
+  height: 100%;
+  vertical-align: center;
+}
+
+.welcome h5{
+/* color: green; */
+text-decoration: none;
+margin-left: 10px;
+}
 
 .announcement {
-  width: 33%;
+  /* width: 33%; */
+  font-size: 1vw
 }
+ 
+
+/* settings flexbox */
+
 
 .settings {
   display: flex;
+  flex-flow: row-reverse;
   /* width: 33%; */
   justify-content: flex-end;
 }
 .settings h4 {
- font-size: 12px;
- margin: 0;
+  font-size: 12px;
+  margin: 0;
 }
+
+
+/* settings buttons */
 
 
 .sign-in-icon, .sign-up-icon, .location-icon {
-    margin: 5px 0px;
-  }
-
+  margin-top: 5px;
+  transition: height 1s, background-color 1s;
+}
 
 
 .sign-in-btn, .sign-up-btn, .location-btn {
-    display: none;
+  display: none;
 }
 
 .sign-in:hover, .sign-up:hover, .location:hover {
-    cursor: pointer;
-  }
+  cursor: pointer;
+}
 
 .sign-in, .sign-up, .location {
-  display: flex;
   padding-right: 10px;
   padding-left: 10px;
 }
-
+ /* before  */
 .sign-in-box, .sign-up-box, .location-box {
-    border-style: solid;
-    border-width: 0;
-    padding: 0 0;
-    width: 0px;
-    height: 0px;
-    background-color: transparent;
-    transition: width 1s, background-color 1s;
-}
-
-.sign-in-btn:checked~.sign-in-box, .sign-up-btn:checked~.sign-up-box, .location-btn:checked~.location-box{
-    background-color: #FFCCCC;
-    width: 200px;
-    height: 100%;
+  border-style: solid;
+  border-width: 0;
+  padding: 0 0;
+  padding-left: 3px;
+  width: 0px;
+  height: 0px;
+  background-color: transparent;
+  transition: width 1s, background-color 1s;
 }
 
 
 
+/* sign in */
+
+
+.sign-in-btn:checked~.sign-in-box{
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 100%;
+}
+
+/* close the other two */
+.sign-in-btn:checked~.sign-up-icon, .sign-in-btn:checked~.location-icon{
+  /* background-color: #FFCCCC; */
+  height: 0;
+  width: 0;
+  color: transparent;
+  transition: height 1s, background-color 1s;
+}
+
+/* if either are already open, close them */
+.sign-in-btn:checked~.sign-up-btn:checked~.submitButton2, .sign-in-btn:checked~.sign-up-btn:checked~.sign-up-box, .sign-in-btn:checked~.location-btn:checked~.submitButton3, .sign-in-btn:checked~.location-btn:checked~.location-box{
+  /* background-color: #137968; */
+  height: 0;
+  border: 0;
+  width: 0;
+  color: transparent;
+  transition: height 1s, background-color 1s;
+}
 
 
 
+/* sign up  */
 
+
+.sign-up-btn:checked~.sign-up-box{
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 100%;
+}
+
+/* close the location */
+.sign-up-btn:checked.sign-in-icon, .sign-up-btn:checked~.location-icon{
+  /* background-color: #FFCCCC; */
+  height: 0;
+  width: 0;
+  order: 1;
+  color: transparent;
+  transition: height 1s, background-color 1s;
+}
+
+/* if either are already open, close them */
+.sign-up-btn:checked~.location-btn:checked~.submitButton3, .sign-up-btn:checked~.location-btn:checked~.location-box{
+  /* background-color: #137968; */
+  height: 0;
+  border: 0;
+  width: 0;
+  color: transparent;
+  transition: height 1s, background-color 1s;
+}
+
+
+/* location */
+
+
+.location-btn:checked~.location-box{
+  background-color: #FFCCCC;
+  width: 200px;
+  height: 100%;
+}
+
+
+
+  /* Submit button */
+
+      /* before  */
+.submitButton1, .submitButton2, .submitButton3{
+  border-style: solid;
+  box-sizing: border-box;
+  border-width: 0;
+  padding: 0 0;
+  width: 0px;
+  height: 0px;
+  transition: width 1s, background-color;
+}
+
+      /* after */
+.sign-in-btn:checked~.submitButton1, .sign-up-btn:checked~.submitButton2, .location-btn:checked~.submitButton3{
+  border-radius: 3px;
+  border-width: 1px;
+  width: 66px;
+  height: 100%;
+}
+
+.sign-in-btn:checked~.submitButton1:hover, .sign-up-btn:checked~.submitButton2:hover, .location-btn:checked~.submitButton3:hover{
+  background-color: rgb(220,220,220);
+  cursor: pointer;
+}
+
+  /* Navigation bar */
 
 .my-brand {
     width: 100px;
