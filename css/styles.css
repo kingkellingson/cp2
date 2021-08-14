@@ -1,4 +1,4 @@
- body {
+body {
     background-color: rgb(233, 226, 213);
     color: #333333;
   }
@@ -26,22 +26,55 @@
 
 .settings {
   display: flex;
-  width: 33%;
+  /* width: 33%; */
   justify-content: flex-end;
 }
 .settings h4 {
- font-size: 15px;
+ font-size: 12px;
  margin: 0;
 }
 
-.sign-in {
-  display: flex;
+
+.sign-in-icon, .sign-up-icon, .location-icon {
+    margin: 5px 0px;
+  }
+
+
+
+.sign-in-btn, .sign-up-btn, .location-btn {
+    display: none;
 }
 
-.my-sign-in {
-  height: 30px;
-  width: 50px;
+.sign-in:hover, .sign-up:hover, .location:hover {
+    cursor: pointer;
+  }
+
+.sign-in, .sign-up, .location {
+  display: flex;
+  padding-right: 10px;
+  padding-left: 10px;
 }
+
+.sign-in-box, .sign-up-box, .location-box {
+    border-style: solid;
+    border-width: 0;
+    padding: 0 0;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    transition: width 1s, background-color 1s;
+}
+
+.sign-in-btn:checked~.sign-in-box, .sign-up-btn:checked~.sign-up-box, .location-btn:checked~.location-box{
+    background-color: #FFCCCC;
+    width: 200px;
+    height: 100%;
+}
+
+
+
+
+
 
 
 
