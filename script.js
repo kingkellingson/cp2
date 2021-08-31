@@ -54,17 +54,16 @@ document.getElementById("submitButton2").addEventListener("click", function(even
 
     }))
 
-
-
-    
-
     console.log("done2");
 
    
 
 })
 
-
-
-
+fetch ("http://apimeme.com/meme?meme=Advice-Dog&top=hi&bottom=hi")
+.then(function(response) {
+  return response.json();
+}).then(function(json) {
+  console.log("new api: ", json)
+})
 
