@@ -1,5 +1,16 @@
 console.log("hello world")
 
+myurl = "https://picsum.photos/id/0/info"
+
+fetch(myurl)
+.then(function (response) {
+  return response.json();
+}).then(function(json) {
+  console.log(json)
+})
+
+console.log("hello world")
+
 document.getElementById("submitButton2").addEventListener("click", function(event) {
     event.preventDefault();
     
@@ -38,7 +49,9 @@ document.getElementById("submitButton2").addEventListener("click", function(even
          let message = "'"+ json.data + "' is your new password"
          alert(message)
 
-    }).then(fetch(url2)
+    })
+    
+    fetch(url2)
     .then(function(response) {
       return response.json();
     }).then(function(json) {
@@ -51,8 +64,17 @@ document.getElementById("submitButton2").addEventListener("click", function(even
 
          document.getElementById("welcome").innerHTML = 
          "<h4>Welcome,</h4> <h5>"+ name+ "</h5>"
+  
+    })
 
-    }))
+    myurl = "https://picsum.photos/id/0/info"
+
+fetch(myurl)
+.then(function (response) {
+  return response.json();
+}).then(function(json) {
+  console.log(json)
+})
 
     console.log("done2");
 
@@ -60,10 +82,10 @@ document.getElementById("submitButton2").addEventListener("click", function(even
 
 })
 
-fetch ("http://apimeme.com/meme?meme=Advice-Dog&top=hi&bottom=hi")
-.then(function(response) {
-  return response.json();
-}).then(function(json) {
-  console.log("new api: ", json)
-})
+// fetch ("http://apimeme.com/meme?meme=Advice-Dog&top=hi&bottom=hi")
+// .then(function(response) {
+//   return response.json();
+// }).then(function(json) {
+//   console.log("new api: ", json)
+// })
 

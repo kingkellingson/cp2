@@ -231,6 +231,11 @@
       color: currentColor;
   }
   
+  .footer1 a {
+    text-decoration: none;
+    color: black;
+}
+
   .footer1:hover {
       opacity: .75;
   }

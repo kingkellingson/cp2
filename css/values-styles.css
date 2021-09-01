@@ -244,6 +244,11 @@ body {
       color: currentColor;
   }
   
+  .footer a {
+    text-decoration: none;
+    color: black;
+}
+
   .footer:hover {
       opacity: .75;
   }

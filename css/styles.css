@@ -111,7 +111,7 @@ margin-left: 10px;
 
 .sign-in-btn:checked~.sign-in-box{
   background-color: #FFCCCC;
-  width: 200px;
+  width: 300px;
   height: 100%;
 }
 
@@ -141,7 +141,7 @@ margin-left: 10px;
 
 .sign-up-btn:checked~.sign-up-box{
   background-color: #FFCCCC;
-  width: 200px;
+  width: 300px;
   height: 100%;
 }
 
@@ -171,7 +171,7 @@ margin-left: 10px;
 
 .location-btn:checked~.location-box{
   background-color: #FFCCCC;
-  width: 200px;
+  width: 300px;
   height: 100%;
 }
 
@@ -636,6 +636,11 @@ margin-left: 10px;
   .footer {
       color: currentColor;
   }
+
+  .footer a {
+    text-decoration: none;
+    color: black;
+}
   
   .footer:hover {
       opacity: .75;
